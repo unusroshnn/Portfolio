@@ -19,73 +19,74 @@ function Home() {
     return (
         <div>
             <div className='flex items-center justify-center'>
-                <div className="w-full sm:w-1/2 flex-col justify-center">
-                    <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hy! I Am</h2>
-                    <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Unus C</h2>
-                    <img src={BlogProfileImage} className='w-60 block sm:hidden' alt="Blog Profile Image" />
-                    <p className='py-2'>A passionate Frontend Developer who loves building modern, responsive, and user-friendly websites.I create clean and attractive web experiences using React, Tailwind CSS, JavaScript, and modern web technologies.
-                        I enjoy turning ideas into real, functional websites that help businesses grow online.Check out my projects and feel free to connect with me. I’m always excited to learn, build, and improve.</p>
-                    <button className='button-style mt-2'>Hire Me</button>
-                </div>
-                <div className='justify-center hidden sm:block'>
-                    <img src={BlogProfileImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
-                </div>
-            </div>
-            <div className='flex justify-evenly py-6'>
-                <img src={HTML} style={{ width: "50px" }} />
-                <img src={CSS} style={{ width: "50px" }} />
-                <img src={JS} style={{ width: "50px" }} />
-                <img src={REACTICON} style={{ width: "50px" }} />
-                <img src={DB} style={{ width: "50px" }} />
-                <img src={NODE} style={{ width: "50px" }} />
-            </div>
+    <div className="w-full sm:w-1/2 flex-col justify-center">
+        <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hi! I Am</h2>
 
-            <div className='flex flex-col mt-10 items-center justify-around sm:flex-row'>
-                <div className='flex-col'>
-                    <div className='mt-4 border-[6px] rounded-lg border-purple-500 p-5 border-t-0 w-60 flex-col items-center'>
-                        <div className='rounded-full border-2 p-5 font-bold text-white text-center bg-gradient-to-br from-purple-200 to-purple-600'>18</div>
-                        <p className='text-center font-medium'>Projects Completed</p>
-                    </div>
-                    <div className='mt-4 border-[6px] rounded-lg border-green-500 p-5 border-t-0 w-60 flex-col items-center'>
-                        <div className='rounded-full border-2 p-5 font-bold text-white text-center bg-gradient-to-br from-green-200 to-green-600'>1</div>
+        <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>
+            Unus C
+        </h2>
 
-                        <p className='text-center font-medium'>Months of Experience</p>
-                    </div>
-                </div>
+        <img
+            src={BlogProfileImage}
+            className='w-60 block sm:hidden'
+            alt="Unus profile"
+        />
 
-                <div className='ml-4 mt-4 sm:mt-0'>
-                    <h2 className='text-3xl sm:text-7xl font-bold'>My Awesome</h2>
-                    <h2 className='text-3xl sm:text-7xl font-bold text-orange-400'>Services</h2>
-                    <p className='my-2'>I have attahed my Resume here for your Reference</p>
-                    <a href="/Resume.pdf" download className="button-style mt-2 inline-block">Download CV</a>
-                </div>
-            </div>
-            <div>
-                <h2 className='text-center text-5xl my-14 font-bold'>Checkout My Live <span className='text-orange-400'>Projects</span> Here</h2>
-                <div className='flex justify-around my-5 flex-col sm:flex-row'>
+        <p className='py-2'>
+            A passionate Frontend Developer who loves building modern,
+            responsive, and user-friendly websites. I create clean and
+            attractive web experiences using React, Tailwind CSS,
+            JavaScript, and modern web technologies.
+        </p>
 
-                    <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="" />
-                    <img src={P2} className='w-64 border rounded-md cursor-pointer' alt="" />
-                    <img src={P3} className='w-64 border rounded-md cursor-pointer' alt="" />
-                </div>
-            </div>
+        <button className='button-style mt-2'>
+            Hire Me
+        </button>
+    </div>
 
+    <div className='justify-center hidden sm:block'>
+        <img
+            src={BlogProfileImage}
+            className='w-60 md:w-96'
+            alt="Unus profile"
+        />
+    </div>
+</div>
 
-            <div className='flex items-center justify-center my-14'>
-                <div className='justify-center hidden sm:block'>
-                    <img src={BlogImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
+<div className='flex justify-evenly py-6'>
+    <img src={HTML} alt="HTML" style={{ width: "50px" }} />
+    <img src={CSS} alt="CSS" style={{ width: "50px" }} />
+    <img src={JS} alt="JavaScript" style={{ width: "50px" }} />
+    <img src={REACTICON} alt="React" style={{ width: "50px" }} />
+    <img src={DB} alt="Database" style={{ width: "50px" }} />
+    <img src={NODE} alt="NodeJS" style={{ width: "50px" }} />
+</div>
 
-                </div>
-                <div className="w-full sm:w-1/2 flex-col justify-center ml-6">
-                    <h2 className='text-3xl md:text-6xl font-bold pb-2'>I like to Write</h2>
-                    <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Blogs about tech</h2>
+<div>
+    <h2 className='text-center text-5xl my-14 font-bold'>
+        Checkout My Live <span className='text-orange-400'>Projects</span> Here
+    </h2>
 
-                    <p className='py-2'>You can know better about me by reading my blogs here. I share my expertise here.</p>
-                    <button className='button-style mt-2' onClick={() => navigate("/blogs")}>Read My Blogs</button>
-                </div>
+    <div className='flex justify-around my-5 flex-col sm:flex-row'>
+        <img
+            src={P1}
+            className='w-64 border rounded-md cursor-pointer'
+            alt="BulkMail Project"
+        />
 
+        <img
+            src={P2}
+            className='w-64 border rounded-md cursor-pointer'
+            alt="Netflix Clone"
+        />
 
-            </div>
+        <img
+            src={P3}
+            className='w-64 border rounded-md cursor-pointer'
+            alt="Udemy Clone"
+        />
+    </div>
+</div>
             <Footer />
         </div>
     )
