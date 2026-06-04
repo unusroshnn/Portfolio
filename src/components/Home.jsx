@@ -10,15 +10,12 @@ import NODE from "../assets/node-js.png"
 import P1 from "../assets/p1.jpg.png"
 import P2 from "../assets/p2.jpg.png"
 import P3 from "../assets/p3.jpg.png"
-import BlogImage from "../assets/blogImage.png"
-import {useNavigate} from 'react-router-dom';
 import Footer from './common/Footer'
 
 function Home() {
-    const navigate = useNavigate()
     return (
         <div>
-            
+            <Navbar />
             <div className='flex items-center justify-center'>
     <div className="w-full sm:w-1/2 flex-col justify-center">
         <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hi! I Am</h2>
