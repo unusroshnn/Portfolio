@@ -15,7 +15,7 @@ import Footer from './common/Footer'
 function Home() {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className='flex items-center justify-center'>
                 <div className="w-full sm:w-1/2 flex-col justify-center">
                     <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hi! I Am</h2>

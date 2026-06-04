@@ -8,6 +8,7 @@ function App() {
   return (
    <div className="px-10  bg-white border rounded-md">
     <BrowserRouter>
+    
     <Routes>
       <Route path="/home" element={<Home/>}></Route>
       <Route path="/blogs" element={<Blogs/>}></Route>
